@@ -8,6 +8,20 @@
     <version>1.0.0</version>
     <packaging>war</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>br.com.treinamento</groupId>
+            <artifactId>projeto-ex02</artifactId>
+            <version>1.0.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>br.com.treinamento</groupId>
+                    <artifactId>projeto-ex01</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
